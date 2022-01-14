@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./XO.png" >
+    <title>Jogo da Velha - Versão Desenvolvida por Waldemar d'Orey</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="TOTAL">
+        <h1>Xis Bola</h1> 
+
+        <div id =" kkk">
+
+     <div class="cada">
+        <div id="0" class="square"></div>
+        <div id="1" class="square"></div>
+        <div id="2" class="square"></div>
+    </div>
+    
+    <div  class="cada">
+        <div id="3" class="square"></div>
+        <div id="4" class="square"></div>
+        <div id="5" class="square"></div>
+    </div>
+    
+    <div  class="cada">
+        <div  id="6" class="square"></div>
+        <div  id="7" class="square"></div>
+        <div  id="8" class="square"></div>
+    </div>
+
+</div>
+
+<div class="jogadores">
+    <jogador1 id="jogador1"></jogador1><span> VS </span>
+    <jogador2 id="jogador2"></jogador2>
+    <br> <button id="reiniciar" onclick="reiniciarTudo();">Reiniciar Jogo</button>
+</div>
+
+
+
+<div id="merito"><a href="https://api.whatsapp.com/send?phone=244925783555&text=Eu%20visitei%20o%20site%2C%20que%20site%20maravilhoso(%C2%A0%CD%A1%C2%B0%C2%A0%CD%9C%CA%96%20%CD%A1%C2%B0)" target="_blank" rel="noopener noreferrer">Clique Aqui para confirmar que passou pelo site</a></div>
+
+</div>
+
+
+
+   
+
+
+
+
+
+<div id="final">
+    <h3>Regras para nome de jogador:</h3>
+    <ul style=" list-style: none">
+        <li>Nomes diferentes</li>
+        <li>Nada mais de 9 letras</li>
+        <li>Impossível criar nome vazio</li>
+        <br>
+        <li>Obs: o jogador 1 é um pato<br> O jogador 2 é um Chad</li>
+    </ul>
+
+    <div class="footer">
+        <h2 id="h2">Jogador 1</h2>
+        <input type="text" name="nome1" oninput="mudarh2()" id="nome1" placeholder="Jogador 1">
+        <h2 id="h3">Jogador 2</h2>
+        <input type="text" name="nome2" oninput="mudarh3()" id="nome2" placeholder="Jogador 2">
+    </div>
+
+    <button id="Enviar" onclick="enviado()">Confirmar Jogadores</button>
+</div>
+    
+<script src="./game.js"></script>
+<script src="./interface.js"></script>
+
+</body>
+</html>
